@@ -15,7 +15,7 @@ const port = process.env.PORT || 4000;
 // Middleware
 app.use(express.json());
 app.use(cors({
-    origin: 'https://your-frontend-url.vercel.app',
+    origin: 'https://food-delivery-oba0.onrender.com',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
   }));
