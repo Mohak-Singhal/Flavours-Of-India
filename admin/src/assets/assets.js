@@ -14,4 +14,4 @@ export const assets ={
     parcel_icon
 }
 
-export const url = process.env.REACT_APP_API_URL;
+export const url = 'https://food-delivery-oba0.onrender.com'
