@@ -1,11 +1,13 @@
 import { createContext, useEffect, useState } from "react";
 import axios from "axios";
+
 // import { food_list } from "../assets/assets";
+
 export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
-  const url = "https://food-delivery-oba0.onrender.com";
+ 
   const [token, setToken] = useState("");
   const [food_list, setFood_list] = useState([]);
 
@@ -54,6 +56,8 @@ const StoreContextProvider = (props) => {
     const response = await axios.get(url + "/api/food/list");
     setFood_list(response.data.data);
   };
+  const url = import.meta.env.VITE_API_URL;
+
 
   const loadCartData = async (token) => {
     const response = await axios.post(
