@@ -6,6 +6,7 @@ Welcome to the Food Delivery MERN Website repository! This project is a full-sta
 ## 🚀 Live Demo  
 Check out the live deployed project:  
 [Food Delivery Frontend](https://food-delivery-frontend-ijc8.onrender.com/)
+[Food Delivery Admin](https://food-delivery-admin-zw9k.onrender.com)
 
 ---
 
