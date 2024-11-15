@@ -5,7 +5,7 @@ Welcome to the Food Delivery MERN Website repository! This project is a full-sta
 
 ## 🚀 Live Demo  
 Check out the live deployed project:  
-[Food Delivery Frontend](https://food-delivery-frontend-ijc8.onrender.com/)
+[Food Delivery Frontend](https://food-delivery-frontend-ijc8.onrender.com/)\n
 [Food Delivery Admin](https://food-delivery-admin-zw9k.onrender.com)
 
 ---
@@ -45,6 +45,11 @@ npm install
 cd frontend  
 npm install  
 ```  
+#### For the Admin  
+```bash  
+cd admin  
+npm install  
+```  
 
 ### 3️⃣ Environment Variables  
 Create `.env` files in both the `frontend` and `backend` directories and configure them as follows:  
@@ -61,6 +66,10 @@ STRIPE_SECRET_KEY=stripe_secret_key
 ```env  
 REACT_APP_API_URL=http://localhost:3000/api  
 ```  
+#### Admin (`admin/.env`)  
+```env  
+REACT_APP_API_URL=http://localhost:3000/api  
+```  
 
 ### 4️⃣ Run the Project Locally  
 #### Backend  
@@ -72,6 +81,11 @@ npm run dev
 #### Frontend  
 ```bash  
 cd frontend  
+npm start  
+```  
+#### Admin  
+```bash  
+cd admin  
 npm start  
 ```  
 
@@ -86,7 +100,7 @@ http://localhost:3000
 ## 📂 Project Structure  
 
 ```  
-food-delivery-mern/  
+Food-Delivery-platform/  
 │  
 ├── backend/             # Backend server  
 │   ├── models/          # Database models  
@@ -95,6 +109,11 @@ food-delivery-mern/
 │   └── server.js        # Entry point  
 │  
 ├── frontend/            # React application  
+│   ├── src/             # Source code  
+│   ├── public/          # Public assets  
+│   └── package.json     # Frontend dependencies  
+│  
+├── admin/            # React application  
 │   ├── src/             # Source code  
 │   ├── public/          # Public assets  
 │   └── package.json     # Frontend dependencies  
