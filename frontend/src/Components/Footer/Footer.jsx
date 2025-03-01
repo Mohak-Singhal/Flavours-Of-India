@@ -7,10 +7,9 @@ const Footer = () => {
     <div className="footer" id="footer">
       <div className="footer-content">
         <div className="footer-left">
-          <img src={assets.logo} alt="" />
+          <img src={assets.logo} alt="" height="200px" />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            vel pariatur vitae. Laborum, magnam minus.
+          Unwrap India’s Soulful Aroma & a World of Timeless Spices!
           </p>
           <div className="footer-special-icons">
             <img src={assets.facebook_icon} alt="" />
@@ -30,14 +29,14 @@ const Footer = () => {
         <div className="footer-right">
           <h2>Get in Touch</h2>
           <ul>
-            <li>+917239369473</li>
+            <li>+9172XXXXXXX</li>
 
-            <li>contact@tomato.com</li>
+            <li>contact@flavorsofindia.com</li>
           </ul>
         </div>
       </div>
       <hr />
-      <p className="footer-copyright">Copyright 2024 @ Tomato.com - All Right Reserved.</p>
+      <p className="footer-copyright">Copyright 2024 @ Flavorsofindia.com - All Right Reserved.</p>
     </div>
   );
 };
