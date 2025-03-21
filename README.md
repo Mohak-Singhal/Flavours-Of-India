@@ -1,12 +1,11 @@
 
-# Food Delivery MERN Website 🍔🍕  
+# Flavours of India   
 
-Welcome to the Food Delivery MERN Website repository! This project is a full-stack web application built with the MERN (MongoDB, Express.js, React.js, Node.js) stack. It allows users to browse food items, place orders, and handle payments seamlessly.  
+Experience the best of Indian cuisine with our Food Ordering MERN platform. Browse a diverse selection of dishes, place your order with ease, and enjoy hassle-free payments.
 
 ## 🚀 Live Demo  
 Check out the live deployed project:  
-[Food Delivery Frontend](https://food-delivery-frontend-ijc8.onrender.com/)\n
-[Food Delivery Admin](https://food-delivery-admin-zw9k.onrender.com)
+[Flavours of India](https://flavours-of-india.vercel.app//)
 
 ---
 
@@ -122,27 +121,4 @@ Food-Delivery-platform/
 ```  
 
 ---
-
-## 📜 Scripts  
-
-### Backend  
-- `npm run dev`: Starts the server in development mode.  
-
-### Frontend  
-- `npm start`: Starts the React development server.  
-
----
-
-## 🌟 Contributing  
-
-Contributions are welcome! Feel free to fork this repository and submit pull requests.  
-
----
-
-## 📧 Contact  
-
-For any questions or feedback, please reach out to:  
-**Mohak Singhal**: [mohaksinghal516@gmail.com](mailto:mohaksinghal516@gmail.com)  
-
----  
 
