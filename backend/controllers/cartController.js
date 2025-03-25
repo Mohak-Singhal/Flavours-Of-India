@@ -49,20 +49,22 @@ const removeFromCart =async (req,res)=>{
 }
 
 // fetch user cart data
-const getCart =async(req,res)=>{
+const getCart = async (req, res) => {
     try {
         let userData = await userModel.findById(req.body.userId);
-        let cartData =await userData.cartData;
-       
-       
-        res.json({sucess:true,cartData});
         
+        if (!userData) { // ✅ Check if user exists
+            return res.status(404).json({ success: false, message: "User not found" });
+        }
+
+        let cartData = userData.cartData; // ✅ No need to use `await` here
+        
+        res.json({ success: true, cartData });
+
     } catch (error) {
         console.log(error);
-        return res.json({success:false,message:`${error}`})
-        
-        
+        return res.status(500).json({ success: false, message: `Error: ${error.message}` });
     }
+};
 
-}
 export{addToCart,removeFromCart,getCart}
