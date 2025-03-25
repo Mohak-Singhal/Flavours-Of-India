@@ -6,7 +6,7 @@ import Stripe from "stripe";
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 //placing order for from frontend
 const placeorder = async (req, res) => {
-  const fronent_url = "http://localhost:5173";
+  const fronent_url = process.env.FRONTEND_URL
   try {
     const newOrder = new orderModel({
       userId: req.body.userId,
@@ -23,7 +23,7 @@ const placeorder = async (req, res) => {
         product_data: {
           name: item.name,
         },
-        unit_amount: item.price * 100 * 83,
+        unit_amount: item.price,
       },
       quantity: item.quantity,
     }));
@@ -33,7 +33,7 @@ const placeorder = async (req, res) => {
         product_data: {
           name: "Delivery Charges",
         },
-        unit_amount: 2 * 100,
+        unit_amount: 2 ,
       },
       quantity: 1,
     });
